@@ -1,8 +1,8 @@
-function! neoformat#formatters#html#enabled() abort
+function! neoformat#formatters#handlebars#enabled() abort
     return ['htmlbeautify', 'prettierd', 'prettier', 'tidy', 'prettydiff']
 endfunction
 
-function! neoformat#formatters#html#tidy() abort
+function! neoformat#formatters#handlebars#tidy() abort
     return {
         \ 'exe': 'tidy',
         \ 'args': ['-quiet',
@@ -16,7 +16,7 @@ function! neoformat#formatters#html#tidy() abort
         \ }
 endfunction
 
-function! neoformat#formatters#html#prettier() abort
+function! neoformat#formatters#handlebars#prettier() abort
     return {
         \ 'exe': 'prettier',
         \ 'args': ['--stdin-filepath', '"%:p"'],
@@ -25,7 +25,7 @@ function! neoformat#formatters#html#prettier() abort
         \ }
 endfunction
 
-function! neoformat#formatters#html#prettierd() abort
+function! neoformat#formatters#handlebars#prettierd() abort
     return {
         \ 'exe': 'prettierd',
         \ 'args': ['"%:p"'],
@@ -33,7 +33,7 @@ function! neoformat#formatters#html#prettierd() abort
         \ }
 endfunction
 
-function! neoformat#formatters#html#htmlbeautify() abort
+function! neoformat#formatters#handlebars#htmlbeautify() abort
     return {
             \ 'exe': 'html-beautify',
             \ 'args': ['--indent-size ' .shiftwidth()],
@@ -41,7 +41,7 @@ function! neoformat#formatters#html#htmlbeautify() abort
             \ }
 endfunction
 
-function! neoformat#formatters#html#prettydiff() abort
+function! neoformat#formatters#handlebars#prettydiff() abort
     return {
         \ 'exe': 'prettydiff',
         \ 'args': ['mode:"beautify"',
