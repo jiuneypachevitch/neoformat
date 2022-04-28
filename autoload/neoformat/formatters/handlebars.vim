@@ -18,7 +18,7 @@ endfunction
 
 function! neoformat#formatters#handlebars#prettier() abort
     return {
-        \ 'exe': 'npx prettier',
+        \ 'exe': 'prettier',
         \ 'args': ['--stdin-filepath', '"%:p"'],
         \ 'stdin': 1,
         \ 'try_node_exe': 1,
