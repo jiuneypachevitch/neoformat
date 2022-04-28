@@ -36,7 +36,7 @@ endfunction
 function! neoformat#formatters#handlebars#htmlbeautify() abort
     return {
             \ 'exe': 'html-beautify',
-            \ 'args': ['--indent-size ' .shiftwidth()],
+            \ 'args': ['--indent-size ' .shiftwidth(), '-r'],
             \ 'stdin': 1,
             \ }
 endfunction
