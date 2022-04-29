@@ -65,7 +65,7 @@ The `undojoin` command will put changes made by Neoformat into the same
 The best way to install Neoformat is with your favorite plugin manager for Vim, such as [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plug 'sbdchd/neoformat'
+Plug 'jiuneypachevitch/neoformat'
 ```
 
 ## Current Limitation(s)
