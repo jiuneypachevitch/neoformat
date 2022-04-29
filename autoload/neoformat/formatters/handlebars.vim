@@ -1,5 +1,4 @@
 function! neoformat#formatters#handlebars#enabled() abort
-    //return ['htmlbeautify', 'prettier', 'prettierd', 'tidy', 'prettydiff']
     return ['htmlbeautify']
 endfunction
 
